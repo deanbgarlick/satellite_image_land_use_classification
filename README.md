@@ -1,6 +1,6 @@
-To develop inside this repo inside the docker container run
+A small dockerized repo to containing jupyter notebooks for the training and inference of an image classification model on the University of California Merced's satellite image land use classification dataset.
 
-```
-docker build . -t temp_container
-docker run -v $(pwd):/home/app -p 8888:8888 -it temp_container /bin/bash
-```
+The training notebook in this repo implements transfer learning on pytorch's pretrained resnet50.
+
+The training/inference code is rather vanilla and much is copied from https://github.com/cfotache/pytorch_imageclassifier .
+
